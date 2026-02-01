@@ -3,292 +3,333 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Andrii Lebid — IT Analyst • Systems Optimization • Automation • Web & Mobile Development" />
-  <title>Andrii Lebid — Portfolio</title>
+  <meta name="description" content="Andrii Lebid — IT Analyst focused on systems optimization, automation, and web & mobile development." />
+  <meta name="theme-color" content="#0b0f14" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Andrii Lebid — IT Analyst & Developer" />
+  <meta property="og:description" content="Systems optimization • Automation • Web & Mobile Development" />
+  <meta property="og:type" content="website" />
+  <!-- Optionally add: og:image + og:url -->
+
+  <title>Andrii Lebid</title>
+
+  <!-- Modern font stack (no external dependencies) -->
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 
 <body>
-  <div class="grain" aria-hidden="true"></div>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="top">
-    <div class="container top__inner">
-      <div class="brand">
-        <div class="brand__mark" aria-hidden="true">☕</div>
-        <div class="brand__text">
-          <h1 class="brand__name">Andrii Lebid</h1>
-          <p class="brand__tag">IT Analyst • Systems Optimization • Automation • Web &amp; Mobile Development</p>
-        </div>
-      </div>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true">◼</span>
+        <span class="brand__text">Andrii Lebid</span>
+      </a>
 
-      <nav class="nav">
+      <nav class="nav" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#featured">Featured</a>
+        <a href="#work">Now</a>
+        <a href="#projects">Projects</a>
         <a href="#stack">Stack</a>
         <a href="#connect">Connect</a>
       </nav>
+
+      <button class="theme" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span class="theme__icon" aria-hidden="true">◐</span>
+      </button>
     </div>
   </header>
 
-  <main>
+  <main id="content">
+    <!-- Hero -->
     <section class="hero">
-      <div class="container hero__inner">
+      <div class="container hero__grid">
         <div class="hero__copy">
-          <p class="kicker">Hey 👋</p>
-          <h2 class="hero__title">Glad to see you here!</h2>
-          <p class="hero__sub">
-            Minimal craft. Strong systems. A little coffee. A lot of automation.
+          <p class="kicker">IT Analyst · Systems Optimization · Automation</p>
+          <h1 class="headline">
+            Web & Mobile Development,
+            <span class="headline__accent">built with focus.</span>
+          </h1>
+          <p class="lead">
+            Hi — I’m Andrii. I optimize systems, automate workflows, and ship practical web/mobile apps.
           </p>
 
           <div class="cta">
-            <a class="btn" href="https://github.com/AndriiLebid" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="btn btn--ghost" href="https://lebid.ca" target="_blank" rel="noreferrer">Blog</a>
-            <a class="btn btn--ghost" href="https://www.linkedin.com/in/andrii-lebid" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid" target="_blank" rel="noreferrer">
+              GitHub ↗
+            </a>
+            <a class="btn btn--ghost" href="https://lebid.ca" target="_blank" rel="noreferrer">
+              Blog ↗
+            </a>
+          </div>
+
+          <div class="meta">
+            <span class="pill">Moncton, NB</span>
+            <span class="pill">Automation</span>
+            <span class="pill">Local AI</span>
           </div>
         </div>
 
-        <div class="hero__card">
-          <div class="card">
-            <div class="card__row">
-              <span class="pill">New minimalism</span>
-              <span class="pill pill--matcha">Japan</span>
-              <span class="pill">Coffee</span>
+        <div class="hero__card" aria-label="Profile summary">
+          <div class="profile">
+            <!-- Optional avatar: add assets/avatar.jpg -->
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <h2 class="profile__name">Andrii Lebid</h2>
+              <p class="profile__role">IT Analyst @ Dizolve Group Corporation</p>
             </div>
-            <p class="card__text">
-              A clean, calm portfolio with featured projects and optional live GitHub repositories.
-            </p>
-            <div class="divider"></div>
-            <p class="card__small">
-              Tip: edit colors in <code>styles.css</code> → <code>:root</code>.
-            </p>
           </div>
+
+          <div class="divider"></div>
+
+          <ul class="facts">
+            <li>
+              <span class="facts__label">Education</span>
+              <span class="facts__value">NBCC Moncton — Web & Mobile App Development</span>
+            </li>
+            <li>
+              <span class="facts__label">Focus</span>
+              <span class="facts__value">Systems optimization, automation, clean delivery</span>
+            </li>
+            <li>
+              <span class="facts__label">Links</span>
+              <span class="facts__value">
+                <a href="https://www.linkedin.com/in/andrii-lebid" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+                <span class="sep">·</span>
+                <a href="https://github.com/AndriiLebid" target="_blank" rel="noreferrer">GitHub ↗</a>
+              </span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <!-- About -->
+    <section class="section" id="about">
       <div class="container">
         <div class="section__head">
-          <h3 class="section__title">👨‍🎓 About Me</h3>
-          <p class="section__note">A short story, kept simple.</p>
+          <h2>About</h2>
+          <p class="muted">
+            I enjoy turning messy processes into reliable systems — and then automating the boring parts.
+          </p>
         </div>
 
         <div class="grid grid--2">
-          <article class="panel">
+          <div class="card">
+            <h3>Background</h3>
             <p>
-              I graduated in <strong>Web and Mobile Application Development</strong> from
-              <strong>New Brunswick Community College (NBCC), Moncton</strong>.
+              I graduated in <strong>Web & Mobile Application Development</strong> from
+              <strong>NBCC Moncton</strong>. Today I work as an <strong>IT Analyst</strong>,
+              focused on <strong>systems optimization</strong> and <strong>automation</strong>.
             </p>
-            <p>
-              Currently working as an <strong>IT Analyst</strong> at <strong>Dizolve Group Corporation</strong>,
-              focusing on <strong>systems optimization</strong> and <strong>automation</strong>.
-            </p>
-          </article>
+          </div>
 
-          <article class="panel">
-            <p class="muted">
-              You can explore my open repositories on GitHub:
-            </p>
+          <div class="card">
+            <h3>What I build</h3>
             <p>
-              <a class="link" href="https://github.com/AndriiLebid" target="_blank" rel="noreferrer">
-                github.com/AndriiLebid
-              </a>
+              Web apps, backend APIs, and mobile apps — especially tools that improve operations:
+              time tracking, content pipelines, link management, and local AI utilities.
             </p>
-            <p class="muted small">
-              This site can also load your latest repos automatically (see “Live Repositories” below).
-            </p>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="work" class="section section--wash">
+    <!-- Now / Work -->
+    <section class="section" id="work">
       <div class="container">
         <div class="section__head">
-          <h3 class="section__title">🚀 What I’m Working On</h3>
-          <p class="section__note">Projects, learning, and experiments.</p>
+          <h2>What I’m working on</h2>
+          <p class="muted">Current focus and active experiments.</p>
         </div>
 
         <div class="grid grid--3">
-          <article class="panel">
-            <h4 class="panel__title">🌱 Completed</h4>
-            <ul class="list">
-              <li>Simple Time and Attendance System — <strong>ASP.NET MVC</strong></li>
-              <li>Backend <strong>API</strong></li>
-              <li>Android app — <strong>Kotlin</strong></li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">🔭 Current Work</h4>
-            <ul class="list">
-              <li>Similar system — <strong>Java (Spring Boot)</strong></li>
-              <li>Mobile app — <strong>Flutter</strong></li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">🌱 Practice</h4>
-            <ul class="list">
-              <li>Small Java tasks for interview preparation</li>
-            </ul>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">🔭 Old Portfolio</h4>
-            <ul class="list">
-              <li>College portfolio — <strong>PHP + MySQL</strong></li>
-            </ul>
-          </article>
-
-          <article class="panel grid__span2">
-            <h4 class="panel__title">🧪 Latest Pet Projects</h4>
-            <ul class="list">
-              <li>
-                Local AI app (<strong>Ollama + Phi‑3</strong>) to:
-                <ul class="list list--sub">
-                  <li>rewrite news from RSS feeds</li>
-                  <li>generate short summaries</li>
-                  <li>auto-post to my blog</li>
-                </ul>
-              </li>
-              <li>
-                Flutter app to:
-                <ul class="list list--sub">
-                  <li>save and manage web links on a mobile phone</li>
-                </ul>
-              </li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h3 class="section__title">📌 Featured Repositories</h3>
-          <p class="section__note">Curated highlights (your direct links).</p>
-        </div>
-
-        <div class="grid grid--3" id="featuredGrid">
-          <!-- Cards inserted by script.js -->
-        </div>
-      </div>
-    </section>
-
-    <section id="live" class="section section--wash">
-      <div class="container">
-        <div class="section__head section__head--row">
-          <div>
-            <h3 class="section__title">✨ Live Repositories</h3>
-            <p class="section__note">Loaded from GitHub (optional).</p>
+          <div class="card card--soft">
+            <h3>Time & Attendance (Java)</h3>
+            <p>Building a modern version using <strong>Spring Boot</strong> + <strong>Flutter</strong>.</p>
+            <a class="link" href="https://github.com/AndriiLebid/STAS_JAVA" target="_blank" rel="noreferrer">
+              Repo ↗
+            </a>
           </div>
 
-          <div class="controls">
-            <label class="toggle">
-              <input id="toggleLive" type="checkbox" checked />
-              <span>Show live repos</span>
-            </label>
+          <div class="card card--soft">
+            <h3>Java Interview Tasks</h3>
+            <p>Small targeted tasks for preparation and fundamentals.</p>
+            <a class="link" href="https://github.com/AndriiLebid/JavaSmallTasks" target="_blank" rel="noreferrer">
+              Repo ↗
+            </a>
+          </div>
 
-            <input id="search" class="input" type="search" placeholder="Search repos…" />
-            <select id="sort" class="select">
-              <option value="updated">Recently updated</option>
-              <option value="stars">Stars</option>
-              <option value="name">Name</option>
-            </select>
+          <div class="card card--soft">
+            <h3>Local AI Tools</h3>
+            <p>Private, lightweight workflows with Ollama and small models.</p>
+            <a class="link" href="https://github.com/AndriiLebid/AI_project" target="_blank" rel="noreferrer">
+              Repo ↗
+            </a>
           </div>
         </div>
 
-        <p class="status" id="status"></p>
-        <div class="grid grid--3" id="repoGrid"></div>
-      </div>
-    </section>
-
-    <section id="stack" class="section">
-      <div class="container">
-        <div class="section__head">
-          <h3 class="section__title">🧰 Tech Stack</h3>
-          <p class="section__note">Quick snapshot.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <article class="panel">
-            <h4 class="panel__title">Backend</h4>
-            <p class="muted">ASP.NET MVC, Java (Spring Boot)</p>
-            <div class="chips">
-              <span class="chip">ASP.NET MVC</span>
-              <span class="chip">Spring Boot</span>
-              <span class="chip">API</span>
-            </div>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">Mobile</h4>
-            <p class="muted">Kotlin (Android), Flutter</p>
-            <div class="chips">
-              <span class="chip">Kotlin</span>
-              <span class="chip">Flutter</span>
-            </div>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">Web</h4>
-            <p class="muted">PHP, JavaScript</p>
-            <div class="chips">
-              <span class="chip">PHP</span>
-              <span class="chip">JavaScript</span>
-            </div>
-          </article>
-
-          <article class="panel">
-            <h4 class="panel__title">Database & Interests</h4>
-            <p class="muted">MySQL • automation • systems optimization • local AI</p>
-            <div class="chips">
-              <span class="chip">MySQL</span>
-              <span class="chip chip--matcha">Automation</span>
-              <span class="chip">Local AI</span>
-            </div>
-          </article>
+        <div class="note">
+          <p><strong>Completed highlight:</strong> A Simple Time & Attendance system (ASP.NET MVC) with a backend API and Android app (Kotlin).</p>
         </div>
       </div>
     </section>
 
-    <section id="connect" class="section section--wash">
+    <!-- Projects -->
+    <section class="section" id="projects">
       <div class="container">
         <div class="section__head">
-          <h3 class="section__title">🤝 Connect</h3>
-          <p class="section__note">Let’s keep it simple.</p>
+          <h2>Featured repositories</h2>
+          <p class="muted">A curated set of work — practical, shippable, and evolving.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project">
+            <div>
+              <h3>Time & Attendance (ASP.NET MVC + API + Android Kotlin)</h3>
+              <p>End-to-end time tracking with API + Android client.</p>
+              <div class="tags">
+                <span class="tag">ASP.NET MVC</span><span class="tag">API</span><span class="tag">Kotlin</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/STAS" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+
+          <article class="project">
+            <div>
+              <h3>Time & Attendance (Spring Boot + Flutter)</h3>
+              <p>Rebuilding the system with modern Java backend and Flutter mobile app.</p>
+              <div class="tags">
+                <span class="tag">Spring Boot</span><span class="tag">Flutter</span><span class="tag">Java</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/STAS_JAVA" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+
+          <article class="project">
+            <div>
+              <h3>AI RSS Rewriter (Ollama + Phi-3)</h3>
+              <p>RSS → rewrite → summary → auto-post to a blog pipeline.</p>
+              <div class="tags">
+                <span class="tag">Ollama</span><span class="tag">Phi-3</span><span class="tag">Automation</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/AI_project" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+
+          <article class="project">
+            <div>
+              <h3>Java Interview Tasks</h3>
+              <p>Focused problems for practice and iteration.</p>
+              <div class="tags">
+                <span class="tag">Java</span><span class="tag">Algorithms</span><span class="tag">Practice</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/JavaSmallTasks" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+
+          <article class="project">
+            <div>
+              <h3>PHP/MySQL Portfolio (college project)</h3>
+              <p>Earlier portfolio work built with PHP and MySQL.</p>
+              <div class="tags">
+                <span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Web</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/personal-portfolio-php" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+
+          <article class="project">
+            <div>
+              <h3>Mobile App Recipe Book</h3>
+              <p>A mobile-first recipe manager.</p>
+              <div class="tags">
+                <span class="tag">Mobile</span><span class="tag">App</span><span class="tag">Flutter/Kotlin</span>
+              </div>
+            </div>
+            <a class="btn btn--ghost" href="https://github.com/AndriiLebid/recipe_base" target="_blank" rel="noreferrer">Open ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="section__head">
+          <h2>Tech stack</h2>
+          <p class="muted">A quick snapshot of tools I use regularly.</p>
         </div>
 
         <div class="grid grid--2">
-          <article class="panel">
-            <p><strong>LinkedIn</strong></p>
-            <p><a class="link" href="https://www.linkedin.com/in/andrii-lebid" target="_blank" rel="noreferrer">linkedin.com/in/andrii-lebid</a></p>
-          </article>
+          <div class="card">
+            <h3>Core</h3>
+            <ul class="list">
+              <li><strong>Backend:</strong> ASP.NET MVC, Java (Spring Boot)</li>
+              <li><strong>Mobile:</strong> Kotlin (Android), Flutter</li>
+              <li><strong>Web:</strong> PHP, JavaScript</li>
+              <li><strong>Database:</strong> MySQL</li>
+            </ul>
+          </div>
 
-          <article class="panel">
-            <p><strong>Blog</strong></p>
-            <p><a class="link" href="https://lebid.ca" target="_blank" rel="noreferrer">lebid.ca</a></p>
-          </article>
+          <div class="card">
+            <h3>Interests</h3>
+            <ul class="list">
+              <li>Automation & workflow design</li>
+              <li>Systems optimization & reliability</li>
+              <li>Local AI (private tooling)</li>
+              <li>Clean UI, minimal design, fast UX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect -->
+    <section class="section" id="connect">
+      <div class="container">
+        <div class="section__head">
+          <h2>Connect</h2>
+          <p class="muted">If you like what I build — follow along.</p>
         </div>
 
-        <p class="footer-note">
-          ⭐ If you like what I build, feel free to follow and check out my repositories!
-        </p>
+        <div class="grid grid--3">
+          <a class="card linkcard" href="https://www.linkedin.com/in/andrii-lebid" target="_blank" rel="noreferrer">
+            <div>
+              <h3>LinkedIn</h3>
+              <p>Professional profile</p>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="card linkcard" href="https://github.com/AndriiLebid" target="_blank" rel="noreferrer">
+            <div>
+              <h3>GitHub</h3>
+              <p>Repositories & experiments</p>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <a class="card linkcard" href="https://lebid.ca" target="_blank" rel="noreferrer">
+            <div>
+              <h3>Blog</h3>
+              <p>Posts & notes</p>
+            </div>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <footer class="footer">
+          <p class="muted">© <span id="year"></span> Andrii Lebid · Built for GitHub Pages</p>
+        </footer>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__inner">
-      <span>© <span id="year"></span> Andrii Lebid</span>
-      <span class="muted small">Minimal • Calm • Craft</span>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
